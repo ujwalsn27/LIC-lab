@@ -170,7 +170,8 @@ At higher frequencies, intrinsic device capacitances such as gate-to-source capa
 
 ## Circuit Diagram
 
-<img width="559" height="561" alt="image" src="https://github.com/user-attachments/assets/53dba353-d475-43e2-9926-4205c8db8e0a" />
+<img width="1197" height="549" alt="image" src="https://github.com/user-attachments/assets/5c4371b3-1c10-45cd-9c79-40fe359dee9f" />
+
 
 
 
@@ -540,7 +541,7 @@ Thus, the transistor widths were refined through simulation to compensate for se
 
 ## DC Analysis
 
-<img width="528" height="385" alt="image" src="https://github.com/user-attachments/assets/6960bdf4-a302-4a1b-91e6-4045538db470" />
+<img width="498" height="363" alt="image" src="https://github.com/user-attachments/assets/44ee784b-8697-4894-b422-0f4aa57735b2" />
 
 
 
