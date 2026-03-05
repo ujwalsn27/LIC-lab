@@ -273,7 +273,7 @@ $$
 ---
 
 # DC Analysis
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c5ea0dec-6c66-4329-b05f-f7a267d851c1" />
+<img width="1339" height="516" alt="image" src="https://github.com/user-attachments/assets/bf9cbd57-528e-45fc-bf33-baece861c836" />
 
 
 - $V_G \approx 0.81\text{ V}$  
@@ -285,8 +285,7 @@ $$
 ---
 
 # Transient Analysis
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8bfed186-a390-40c3-840c-4d23f9d590ab" />
-
+<img width="1363" height="542" alt="image" src="https://github.com/user-attachments/assets/3da8a619-f211-4a60-bcb1-50060108389d" />
 
 Input:
 
@@ -337,7 +336,7 @@ $$
 ---
 
 # AC Analysis
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/a7d7efbb-5296-429b-ada4-23fe93dd45d0" />
+<img width="1349" height="545" alt="image" src="https://github.com/user-attachments/assets/f73b4af7-6918-4a48-b1a9-b11a49446504" />
 
 
 - Midband Gain ≈ 28 dB  
@@ -349,6 +348,30 @@ Bandwidth:
 $$
 BW \approx 37\text{–}40\text{ MHz}
 $$
+
+## -3 dB Cutoff Frequency (Bandwidth)
+<img width="1347" height="581" alt="image" src="https://github.com/user-attachments/assets/44edda13-16dd-4c38-9f1c-a39fc2de254c" />
+
+
+From the AC analysis, the midband gain of the amplifier is approximately 28 dB.  
+The −3 dB point occurs when the gain drops by 3 dB from its midband value.
+
+Midband Gain ≈ 28.4 dB  
+−3 dB Gain Level ≈ 25.4 dB  
+
+From the Bode plot, this occurs at:
+
+$(f_H)$ ≈ 37.15 MHz
+
+This frequency represents the **upper cutoff frequency** of the amplifier.
+
+Beyond this point, the gain starts decreasing rapidly due to internal MOSFET parasitic capacitances (Cgs, Cgd) which introduce dominant poles in the circuit.
+
+Hence, the bandwidth of the amplifier is approximately:
+
+Bandwidth ≈ 37.15 MHz
+
+
 
 ---
 
