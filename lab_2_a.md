@@ -112,7 +112,7 @@ $$
 
 ---
 ## Circuit Diagram
-<img width="1051" height="865" alt="image" src="https://github.com/user-attachments/assets/6705fb7d-ac50-42cc-852b-89a2c70d3277" />
+<img width="1272" height="564" alt="image" src="https://github.com/user-attachments/assets/21ffbe12-631c-4d47-9d60-d02b2eaed032" />
 
 
 # Design
