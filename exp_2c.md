@@ -444,7 +444,7 @@ The DC operating point confirms that the output voltage is near the designed bia
 
 ### Transient Analysis
 
-![Transient Analysis](Results/exp2c_transient.png)
+<img width="1919" height="452" alt="image" src="https://github.com/user-attachments/assets/730a293e-e041-4739-86c0-fe69d1420ce3" />
 
 The output waveform is amplified and inverted, confirming proper CS operation.
 
@@ -555,90 +555,11 @@ $$
 
 ---
 
-## 3.5 Reasons for Difference Between Theoretical and Simulated Gain
 
-The theoretical gain was calculated using a simplified small-signal expression:
-
-$$
-A_v = \frac{-g_{m1} r_{o2}}{1 + \frac{g_{m1}}{g_{m3}}}
-$$
-
-This expression assumes ideal device behavior and neglects several second-order effects. The deviation between the theoretical gain (40 V/V) and the simulated gain (~25 V/V) arises due to the following reasons:
-
-##
-
-### 1. Finite Output Resistance of M1
-
-In the simplified derivation, the output resistance of M1 ($r_{o1}$) is often neglected.
-
-In practice:
-
-$$
-R_{out} = r_{o1} \parallel r_{o2}
-$$
-
-This reduces the effective output resistance and therefore reduces the gain.
-
-##
-
-### 2. Non-Ideal Diode-Connected Transistor (M3)
-
-The diode-connected NMOS (M3) does not behave as an ideal element. Its small-signal resistance is:
-
-$$
-r_{d3} = \frac{1}{g_{m3} + g_{ds3}}
-$$
-
-The presence of $g_{ds3}$ increases the effective degeneration, reducing the overall gain compared to the ideal expression.
-
-##
-
-### 3. Channel Length Modulation
-
-The theoretical gain assumes a fixed channel length modulation parameter ($\lambda$). However, in simulation:
-
-$$
-r_o = \frac{1}{\lambda I_D}
-$$
-
-Since $\lambda$ varies with bias conditions, the effective output resistance differs from the assumed value, affecting gain.
-
-##
-
-### 4. Mobility Degradation and Short-Channel Effects
-
-In modern 180nm technology, carrier mobility decreases at higher electric fields. This reduces the effective transconductance:
-
-$$
-g_m = \frac{2 I_D}{V_{OV}}
-$$
-
-As a result, the practical gain becomes lower than the theoretical value.
-
-##
-
-### 5. Parasitic Capacitances
-
-The simulator includes intrinsic parasitic capacitances such as:
-
-- $C_{gs}$
-- $C_{gd}$
-- $C_{db}$
-
-These parasitics influence the small-signal response and slightly reduce the measured gain.
-
----
-
-## Conclusion
-
-The theoretical expression provides a first-order approximation.  
-However, practical device non-idealities and second-order effects reduce the gain from the calculated 40 V/V to approximately 25 V/V in simulation.
-
-Such deviation is expected and confirms the realistic behavior of MOSFET-based amplifier circuits.
 
 ### 3.6 AC Analysis
 
-![AC Analysis](Results/exp2c_ac.png)
+<img width="1917" height="425" alt="image" src="https://github.com/user-attachments/assets/c02fe3e4-84a7-41d8-9151-b512a362773d" />
 
 In AC analysis, the frequency response of the Common Source amplifier is observed.
 
